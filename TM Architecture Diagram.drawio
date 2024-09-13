@@ -1,0 +1,131 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36" version="24.7.13">
+  <diagram name="Page-1" id="2h502U0qHapdNW9ha8Mq">
+    <mxGraphModel dx="1434" dy="790" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="QabF0U1G8ZoBUWe7Lgks-5" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="30" y="205" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="QabF0U1G8ZoBUWe7Lgks-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="QabF0U1G8ZoBUWe7Lgks-3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="300" y="450" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="181" y="245" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QabF0U1G8ZoBUWe7Lgks-3" value="Users" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="50" y="230" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="QabF0U1G8ZoBUWe7Lgks-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="QabF0U1G8ZoBUWe7Lgks-7" target="QabF0U1G8ZoBUWe7Lgks-9">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="375" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QabF0U1G8ZoBUWe7Lgks-7" value="Cloud flare" style="whiteSpace=wrap;html=1;shape=mxgraph.basic.cloud_callout" vertex="1" parent="1">
+          <mxGeometry x="307.5" y="410" width="150" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="QabF0U1G8ZoBUWe7Lgks-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="QabF0U1G8ZoBUWe7Lgks-9">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="560" y="360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QabF0U1G8ZoBUWe7Lgks-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.062;entryY=0.6;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="QabF0U1G8ZoBUWe7Lgks-9" target="QabF0U1G8ZoBUWe7Lgks-18">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="530" y="210" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="374" y="210" />
+              <mxPoint x="520" y="210" />
+              <mxPoint x="520" y="174" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QabF0U1G8ZoBUWe7Lgks-9" value="Elastic Load Balancer" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="307.5" y="230" width="132.5" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="QabF0U1G8ZoBUWe7Lgks-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="QabF0U1G8ZoBUWe7Lgks-18">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="790" y="600" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QabF0U1G8ZoBUWe7Lgks-18" value="Frontend and backend configured for TM application" style="shape=datastore;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="547" y="90" width="130" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="QabF0U1G8ZoBUWe7Lgks-16" value="User Requests" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="460" y="308" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="QabF0U1G8ZoBUWe7Lgks-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="QabF0U1G8ZoBUWe7Lgks-19">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="720" y="600" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QabF0U1G8ZoBUWe7Lgks-19" value="Frontend and backend configured for the TM application" style="shape=datastore;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="560" y="260" width="150" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="QabF0U1G8ZoBUWe7Lgks-20" value="EC2 Instance 1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="547" y="90" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="QabF0U1G8ZoBUWe7Lgks-21" value="EC2 Instance 2" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="580" y="260" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="QabF0U1G8ZoBUWe7Lgks-30" value="" style="shape=datastore;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="190" y="585" width="280" height="215" as="geometry" />
+        </mxCell>
+        <mxCell id="QabF0U1G8ZoBUWe7Lgks-31" value="Nginx Reverse proxy server" style="shape=ext;double=1;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="250" y="670" width="70" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="QabF0U1G8ZoBUWe7Lgks-50" value="Mongo DB Database" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="700" y="610" width="120" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="QabF0U1G8ZoBUWe7Lgks-51" value="What happens in the EC2?" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="250" y="590" width="170" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="QabF0U1G8ZoBUWe7Lgks-52" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;shape=flexArrow;rounded=1;startSize=8;endSize=8;" edge="1" parent="1">
+          <mxGeometry width="100" relative="1" as="geometry">
+            <mxPoint x="90" y="684.5" as="sourcePoint" />
+            <mxPoint x="190" y="684.5" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QabF0U1G8ZoBUWe7Lgks-53" value="User Request" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="50" y="638" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="QabF0U1G8ZoBUWe7Lgks-62" value="FE" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="357.5" y="670" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="QabF0U1G8ZoBUWe7Lgks-67" value="" style="endArrow=classic;html=1;rounded=0;startArrow=classic;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="397.5" y="695" as="sourcePoint" />
+            <mxPoint x="430" y="730" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="420" y="720" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QabF0U1G8ZoBUWe7Lgks-69" value="BE" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="414" y="730" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="QabF0U1G8ZoBUWe7Lgks-71" value="" style="endArrow=classic;html=1;rounded=0;startArrow=classic;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="QabF0U1G8ZoBUWe7Lgks-62">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="318.75" y="695" as="sourcePoint" />
+            <mxPoint x="351.25" y="730" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QabF0U1G8ZoBUWe7Lgks-72" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="190" y="690" as="sourcePoint" />
+            <mxPoint x="250" y="700" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QabF0U1G8ZoBUWe7Lgks-74" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.033;entryY=0.636;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="QabF0U1G8ZoBUWe7Lgks-69" target="QabF0U1G8ZoBUWe7Lgks-50">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QabF0U1G8ZoBUWe7Lgks-75" value="Either Request to E1 or E2" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="420" y="230" width="170" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
