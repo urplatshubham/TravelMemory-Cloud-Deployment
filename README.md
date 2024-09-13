@@ -10,8 +10,8 @@ This repository provides the step by step approach to deploy a **MERN** (MongoDB
 - [Deployment on AWS EC2](#deployment-on-aws-ec2)
   - [Step 1: Clone the Repository](#step-1-clone-the-repository)
   - [Step 2: Backend Configuration](#step-2-backend-configuration)
+  - [Step 4: Setup for Reverse Proxy with Nginx](#step-4-setup-for-reverse-proxy-with-Nginx)
   - [Step 3: Frontend Configuration](#step-3-frontend-configuration)
-  - [Step 4: Nginx Setup for Reverse Proxy](#step-4-nginx-setup-for-reverse-proxy)
   - [Step 5: Scaling and Load Balancing](#step-5-scaling-and-load-balancing)
   - [Step 6: Domain Setup with Cloudflare](#step-6-domain-setup-with-cloudflare)
 - [Architecture Diagram](#architecture-diagram)
@@ -96,7 +96,7 @@ Similarly create another instance using the image of the already create EC2 inst
    ```bash
    npm start
    ```
-
+![Screenshot of the Backend Configured](https://github.com/urplatshubham/TravelMemory-Cloud-Deployment/blob/main/BE%20configured.png)
 ### Step 3: Set up Reverse Proxy with Nginx
   Install Nginx using (if it wasn't installed already).
   ```bash
@@ -123,8 +123,7 @@ Similarly create another instance using the image of the already create EC2 inst
   ```
   $sudo systemctl start nginx
   ```
-
-### Step 3: Frontend Configuration
+### Step 4: Frontend Configuration
 
 Open another terminal in the browser to access the already created EC2 instance.
 
@@ -148,7 +147,7 @@ Open another terminal in the browser to access the already created EC2 instance.
    ```bash
    sudo systemctl restart nginx
    ```
-
+![Screenshot of the Frontend Configured](https://github.com/urplatshubham/TravelMemory-Cloud-Deployment/blob/main/FE%20configured.png)
 ### Step 5: Scaling and Load Balancing of the application
 
 1. Similarly create another instance using the image of the already create EC2 instance and follow all the steps
@@ -158,13 +157,13 @@ Open another terminal in the browser to access the already created EC2 instance.
    - Add the EC2 instances to the load balancer using target groups point the EC2 instances.
 
 3. Ensure the frontend communicates with the load balancer, not directly with an EC2 instance.
-
+![Screenshot of the ELB Configured](https://github.com/urplatshubham/TravelMemory-Cloud-Deployment/blob/main/LB%20Configured.png)
 ### Step 6: Domain Setup with Cloudflare
 
 1. In your **Cloudflare** dashboard, add your domain. if not add a sub-domain under a already existing domain.
 2. Create a **CNAME** record pointing to the ELB DNS name.
 3. Create an **A** record pointing to the DNS name of the load balancer handling the  the application.
-
+![Screenshot of the final deployment in cloud flare](https://github.com/urplatshubham/TravelMemory-Cloud-Deployment/blob/main/Deployment-CF-TM.png)
 ## Troubleshooting
 
 ### Nginx Fails to Start
@@ -177,10 +176,20 @@ Open another terminal in the browser to access the already created EC2 instance.
   sudo lsof -i :80
   ```
 
+### Architecture Diagram
+Here’s an overview of the architecture used in this deployment as uploaded above as Tm Architecture Diagram.drawio:
+![Architecture Diagram](https://github.com/urplatshubham/TravelMemory-Cloud-Deployment/blob/main/TM%20Architecture%20Diagram.drawio)
+
+- Frontend and backend hosted on EC2 instances.
+- Elastic Load Balancer (ELB) to distribute traffic across instances.
+- Nginx acting as a reverse proxy to handle incoming requests.
+- Cloudflare used to manage the domain and SSL termination.  
+
 
 ## Testing
   Stopped one EC2 instance and verified that the load balancer redirected traffic seamlessly to the other instance, ensuring no downtime during testing. Both backend and frontend worked         flawlessly through the load balancer.
   This deployment ensures smooth scaling, reverse proxy handling via Nginx, and efficient load balancing across EC2 instances.
+
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
